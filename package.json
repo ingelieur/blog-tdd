@@ -1,0 +1,31 @@
+{
+  "name": "blog-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingelieur/blog-tdd.git"
+  },
+  "author": "Shabrina V. Inmas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingelieur/blog-tdd/issues"
+  },
+  "homepage": "https://github.com/ingelieur/blog-tdd#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chai": "^4.0.1",
+    "chai-http": "^3.0.0",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.10.4"
+  }
+}
