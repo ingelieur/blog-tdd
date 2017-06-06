@@ -23,8 +23,15 @@ var destroy = ((req,res) => {
   });
 });
 
+var update = ((req,res) => {
+  Articles.findByIdAndUpdate(req.params.id, req.body, (err,article) => {
+    res.send(err ? err : article);
+  });
+});
+
 module.exports = {
   create,
   showAll,
-  destroy
+  destroy,
+  update
 };
